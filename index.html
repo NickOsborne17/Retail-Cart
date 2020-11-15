@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Retail Cart</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" id="font-awesome-5-pro-css" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?ver=54" type="text/css" media="all">
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="header-content">
+        <div class="cart">
+          <a href="#">
+            <span id="cart-label-desktop">My Cart</span>
+            <span id="cart-label-mobile" class="fas">&#xf07a;</span>
+            ( <span id="cart-quantity">4</span> )
+          </a>
+          <div class="cart-content">
+            <div class="cart-item">
+              <img class="mini-img" src="assets/classic-tee.jpg">
+              <div>
+                <p class="mini-product-title">Classic Tee</p>
+                <p class="mini-product-price"><span>1</span>x <span class="mini-price">$75.00</span></p>
+                <p class="mini-product-size">Size: S</p>
+              </div>
+            </div>
+            <div class="cart-item">
+              <img class="mini-img" src="assets/classic-tee.jpg">
+              <div>
+                <p class="mini-product-title">Classic Tee</p>
+                <p class="mini-product-price"><span>3</span>x <span class="mini-price">$75.00</span></p>
+                <p class="mini-product-size">Size: L</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="col left-col">
+        <img src="assets/classic-tee.jpg">
+      </div>
+      <div class="col right-col">
+        <h1 class="product-title">Classic Tee</h1>
+        <p class="product-price">$75.00</p>
+        <p class="product-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut magna risus, mollis non iaculis et, ultrices at dui. Integer ultricies magna et pharetra aliquet. Nulla rutrum dictum est. Quisque maximus nulla sem, nec efficitur turpis fringilla eget. Donec blandit, massa sagittis viverra lobortis, odio urna molestie urna, et interdum ex quam ut elit. Aliquam quis dui sed nulla porta ultrices at id neque. Integer sed arcu vel orci volutpat tempus eget eu augue. Duis faucibus ex quam. Sed dapibus gravida quam. In et lorem turpis. In a nulla pellentesque tortor bibendum accumsan id non neque.</p>
+        <div class="product-meta">
+          <form action="index.html" method="post">
+            <div class="product-meta-item product-size">
+              <label class="required">SIZE</label>
+              <div class="option">
+                <input type="radio" id="sml" name="size" value="S">
+                <label for="sml">S</label>
+              </div>
+              <div class="option">
+                <input type="radio" id="med" name="size" value="M">
+                <label for="med">M</label>
+              </div>
+              <div class="option">
+                <input type="radio" id="lar" name="size" value="L">
+                <label for="lar">L</label>
+              </div>
+            </div> <!-- END product size -->
+
+            <input type="submit" value="ADD TO CART">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Body Scripts -->
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
